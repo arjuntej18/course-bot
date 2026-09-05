@@ -1,0 +1,19 @@
+# Files that should not be included in the Docker image.
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.venv/
+venv/
+env/
+
+.git/
+.gitignore
+
+data/*
+*.log
+
+.vscode/
+.idea/

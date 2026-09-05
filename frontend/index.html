@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Course Bot</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Course Bot</h1>
+            <p>Automated course playback with recovery.</p>
+        </header>
+
+        <section class="card">
+
+            <h2>Start Automation</h2>
+
+
+<ol class="instruction">
+    <li>Log in manually.</li>
+    <li>Open the video you want to start from.</li>
+    <li>Then click <strong>Start Automation</strong>.</li>
+    <li>The bot will automatically open a new browser window.</li>
+    <li>Log in there.</li>
+    <li>Once you play the video, the bot will automatically play all the next videos.</li>
+    <li>Keep the browser window open and do not close it until the bot finishes playing all the videos.</li>
+    <li>If you close the browser window, the bot will stop and you will have to start over from the beginning.</li>
+    <li>If you want to stop the bot, click the <strong>Stop</strong> button.</li>
+    <li>Make sure you have a stable internet connection.</li>
+    <li>If you want to restart the bot, click the <strong>Restart</strong> button.</li>
+    <li>For safety, check the progress and checkpoint in the dashboard to make sure the bot is working properly.</li>
+    <li>Don't disturb the newly opened tab while it is running.</li>
+    <li>If you have any issues, please contact <strong>  ravitejapersonal01@gmail.com  </strong>.</li>
+    <li>It wIt will take "frequent breaks between videos". Don't worry or stop the bot; this is normal.</li>
+    <li>Enjoy the automation!</li>
+</ol>
+
+
+
+            <button id="startBtn" class="primary">
+                START AUTOMATION
+            </button>
+
+        </section>
+
+        <section class="card">
+
+            <h2>System Status</h2>
+
+            <div class="status-row">
+                <span>Browser</span>
+                <strong id="browserStatus">Disconnected</strong>
+            </div>
+
+            <div class="status-row">
+                <span>Internet</span>
+                <strong id="internetStatus">Connected</strong>
+            </div>
+
+            <div class="status-row">
+                <span>Automation</span>
+                <strong id="automationStatus">Idle</strong>
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Current Video</h2>
+
+            <div class="progress">
+                <span id="position">0:00</span>
+                <span>/</span>
+                <span id="duration">0:00</span>
+            </div>
+
+            <div class="message" id="message">
+                Waiting to start.
+            </div>
+
+            <div class="checkpoint">
+                Last checkpoint:
+                <strong id="checkpoint">0:00</strong>
+            </div>
+
+        </section>
+
+        <section class="controls">
+
+            <button id="retryBtn">
+                RETRY
+            </button>
+
+            <button id="restartBtn">
+                RESTART
+            </button>
+
+            <button id="stopBtn" class="danger">
+                STOP
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="/static/app.js"></script>
+
+</body>
+
+</html>
+
